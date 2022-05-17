@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+}
+
+/*** Global layout ***/
+
+.main  {
+    width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+      "header  header"
+      "article aside"
+      "footer  footer";
+}
+.header {
+    grid-area: header;
+    margin-bottom: 50px;
+}
+.article {
+    grid-area: article;
+    width: 960px;
+}
+.aside  {
+    grid-area: aside;
+    width: 320px;
+}
+.archives {
+    position: sticky;
+    top: 0;
+}
+.footer {
+    margin-top: 50px;
+    grid-area: footer;
+}
+
+/*** Links for navigation between posts ***/
+
+.posts-navigation {
+    font-family: Rajdhani;
+    margin: 0 auto;
+}
+
+.posts-navigation--title {
+    margin: 0 auto 30px auto;
+    border-bottom: 1px solid #CCC;
+    position: relative;
+}
+
+.posts-navigation--title span {
+    color: #999;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.5;
+    background: #fff url(../img/icon-tricon.png) no-repeat 1em center;
+    height: 20px;
+    padding: 0 1em 0 3em;
+    margin-top: -1.5ex;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.posts-navigation--links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.posts-navigation--link {
+    color: #fff;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #ba2025;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    border-radius: 4px;
+    padding: 0.75em 1em;
+    width: 12em;
+    display: block;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.posts-navigation--link:hover,
+.posts-navigation--link:active,
+.posts-navigation--link:focus {
+    background-color: #000;
+    text-decoration: none;
+}
+
+.posts-navigation--links li:first-child a {
+    background-image: url(../img/icon-left.svg);
+    background-position: 1em center;
+    padding-left: 2em;
+}
+.posts-navigation--links li:last-child a {
+    background-image: url(../img/icon-right.svg);
+    background-position: right 1em center;
+    padding-right: 2em;
+}
