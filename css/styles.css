@@ -101,12 +101,12 @@ img {
 }
 
 .posts-navigation--links li:first-child a {
-    background-image: url(../img/icon-left.svg);
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBvbHlnb24gcG9pbnRzPSIxIDggMTUgMTYgMTUgMCAxIDgiIGZpbGw9IiNmZmYiLz48L3N2Zz4K);
     background-position: 1em center;
     padding-left: 2em;
 }
 .posts-navigation--links li:last-child a {
-    background-image: url(../img/icon-right.svg);
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBvbHlnb24gcG9pbnRzPSIxNSA4IDEgMTYgMSAwIDE1IDgiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
     background-position: right 1em center;
     padding-right: 2em;
 }
