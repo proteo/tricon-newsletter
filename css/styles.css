@@ -57,7 +57,7 @@ img {
     text-align: center;
     text-transform: uppercase;
     line-height: 1.5;
-    background: #fff url(../img/icon-tricon.png) no-repeat 1em center;
+    background: #fff url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBvbHlnb24gcG9pbnRzPSI2Ljk5IDAgMSA0LjIxIDEyLjAzIDEzLjM1IDYuOTkgMCIgZmlsbD0iI2JhMjAyNSIvPjxwYXRoIGQ9Ik0xMS41LDVoLS40NWEuMzIuMzIsMCwwLDAtLjI3LjQzbC40NiwxLjI2YS4yNy4yNywwLDAsMCwuMjYuMThoMEE1LjYyLDUuNjIsMCwxLDEsNS45LDEyLjVhNS40Nyw1LjQ3LDAsMCwxLC4yNi0xLjY4LjMxLjMxLDAsMCwwLS4xLS4zNEw1LDkuNjRhLjMyLjMyLDAsMCwwLS40OS4xM0E3LjUsNy41LDAsMSwwLDExLjUsNSIvPjwvc3ZnPgo=) no-repeat 1em center;
     height: 20px;
     padding: 0 1em 0 3em;
     margin-top: -1.5ex;
