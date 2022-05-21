@@ -1,0 +1,84 @@
+/*
+ * Prototype layout (NOT TO BE USED).
+ */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+}
+main {
+    margin: 0 auto;
+    display: grid;
+}
+header {
+    grid-area: header;
+}
+article {
+    grid-area: article;
+}
+footer {
+    grid-area: footer;
+    margin-top: 50px;
+}
+
+/*** Destkop version ***/
+
+.desktop main  {
+    width: 1280px;
+    grid-template-areas:
+      "header  header"
+      "article aside"
+      "footer  footer";
+}
+.desktop header {
+    margin-bottom: 50px;
+}
+.desktop article {
+    width: 960px;
+}
+.desktop aside  {
+    grid-area: aside;
+    width: 320px;
+}
+.desktop .archives {
+    position: sticky;
+    top: 0;
+}
+
+/*** Mobile version ***/
+
+.mobile {
+    background-color: black;
+}
+
+.mobile main {
+    background-color: white;
+    margin-top: 50px;
+    width: 375px;
+    height: 667px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    grid-template-areas:
+      "header"
+      "article"
+      "footer";
+}
+
+/* Hide scrollbars */
+.mobile main::-webkit-scrollbar {
+    display: none;
+}
+.mobile main {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.mobile header {
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.2);
+    height: 132px;
+    margin-bottom: 20px;
+    position: relative;
+}
