@@ -1,8 +1,10 @@
-/*** Links for navigation between posts ***/
+/*
+ * Styling for navigation between posts.
+ */
 
 .posts-navigation {
     font-family: Rajdhani;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 
 .posts-navigation--title {
@@ -16,7 +18,8 @@
     font-weight: normal;
     text-align: center;
     text-transform: uppercase;
-    line-height: 1.5;
+    line-height: 1.75;
+    white-space: nowrap;
     background: #fff url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBvbHlnb24gcG9pbnRzPSI2Ljk5IDAgMSA0LjIxIDEyLjAzIDEzLjM1IDYuOTkgMCIgZmlsbD0iI2JhMjAyNSIvPjxwYXRoIGQ9Ik0xMS41LDVoLS40NWEuMzIuMzIsMCwwLDAtLjI3LjQzbC40NiwxLjI2YS4yNy4yNywwLDAsMCwuMjYuMThoMEE1LjYyLDUuNjIsMCwxLDEsNS45LDEyLjVhNS40Nyw1LjQ3LDAsMCwxLC4yNi0xLjY4LjMxLjMxLDAsMCwwLS4xLS4zNEw1LDkuNjRhLjMyLjMyLDAsMCwwLS40OS4xM0E3LjUsNy41LDAsMSwwLDExLjUsNSIvPjwvc3ZnPgo=) no-repeat 1em center;
     height: 20px;
     padding: 0 1em 0 3em;
@@ -25,6 +28,10 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.posts-navigation--link--date {
+    text-transform: capitalize;
 }
 
 .posts-navigation--links {
@@ -69,4 +76,24 @@
     background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBvbHlnb24gcG9pbnRzPSIxNSA4IDEgMTYgMSAwIDE1IDgiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
     background-position: right 1em center;
     padding-right: 2em;
+}
+
+/** Mobile styles **/
+
+/*.mobile .posts-navigation--title {
+    margin-right: 10px;
+    margin-left: 10px;
+}*/
+
+.mobile .posts-navigation--title span {
+    background-position: 0.75em center;
+    padding-left: 2.5em;
+    padding-right: 0.5em;
+}
+
+.mobile .posts-navigation--link {
+    width: 6em;
+}
+.mobile .posts-navigation--link--date {
+    display: none;
 }
