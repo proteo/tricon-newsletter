@@ -19,6 +19,9 @@ header {
 article {
     grid-area: article;
 }
+aside  {
+    grid-area: aside;
+}
 footer {
     grid-area: footer;
     margin-top: 50px;
@@ -40,7 +43,6 @@ footer {
     width: 960px;
 }
 .desktop aside  {
-    grid-area: aside;
     width: 320px;
 }
 .desktop .archives {
@@ -64,6 +66,7 @@ footer {
     grid-template-areas:
       "header"
       "article"
+      "aside"
       "footer";
 }
 
